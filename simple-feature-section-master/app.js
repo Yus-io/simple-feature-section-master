@@ -1,14 +1,16 @@
 "use strict";
 
-const observer = new IntersectionObserver((entries) => {
-  const entry = entries[0]
-  // forEach((entry) => {
-  //   console.log(entry);
-  //   if (entry.isIntersecting) {
-  //     entry.target.classList.add("show");
-  //   }
-  // });
-});
+const subHeadingBox = document.querySelector('.sub-heading-box')
 
-const hiddenElement = document.querySelector(".hidden");
-hiddenElement.forEach((el) => observer.observe(el));
+const subHeadingBoxObserver = new IntersectionObserver(function(entries){
+  const entry = entries[0];
+
+  console.log(entry);
+
+  if(entry.isIntersecting) subHeadingBox.classList.remove('hidden');
+  else subHeadingBox.classList.add('hidden');
+
+}, {root: null, threshold: 1})
+
+
+subHeadingBoxObserver.observe(subHeadingBox);
