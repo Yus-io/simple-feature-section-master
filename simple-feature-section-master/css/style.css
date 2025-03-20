@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 90vh;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #999;
+  font-family: sans-serif;
+  background-image: url(../resources/Background_image.svg);
+  background-color: #181924;
+}
+
+.Testimonial-section {
+  max-width: 110rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.hearding-primary-box {
+  text-align: center;
+  color: #fff;
+  width: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  line-height: 1.4;
+  /* margin-left: 23rem; */
+}
+
+.hearding-primary {
+  font-size: 3rem;
+}
+
+.heading-text {
+  color: #999;
+}
+
+.sub-heading-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+
+  margin-top: 3rem;
+}
+
+.heading-secondary-box {
+  background-color: #434562;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 22rem;
+  height: 36rem;
+}
+
+.heading-secondary {
+    font-size: 1.6rem;
+    color: #fff;
+
+}
+
+.heading-s-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 2.4rem;
+    background-color: #fff;
+    width: 25%;
+    height: 20%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.heading-s-img {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+.hidden {
+    opacity: 0;
+    transition:all .3ms ease-out;
+}
+
+.show {
+    opacity: 1;
+}
